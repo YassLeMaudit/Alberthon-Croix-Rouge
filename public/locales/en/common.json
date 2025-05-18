@@ -56,7 +56,9 @@
     "loading": "The assistant is writing a response...",
     "error": "Sorry, an error occurred. Please try again.",
     "welcome_cv": "Hello! I'm your resume creation assistant. How can I help you today? Feel free to tell me about your experiences, even if they're not professional.",
-    "welcome_lettre": "Hello! I'm your cover letter creation assistant. How can I help you today? Tell me about your life experiences, and I'll help you transform them into professional skills."
+    "welcome_lettre": "Hello! I'm your cover letter creation assistant. How can I help you today? Tell me about your life experiences, and I'll help you transform them into professional skills.",
+    "context_default": "Default context",
+    "send": "Send"
   },
   "home": "Home",
   "cv": "Resume",

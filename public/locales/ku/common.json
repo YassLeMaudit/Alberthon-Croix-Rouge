@@ -59,7 +59,9 @@
     "loading": "Alîkar bersivê dinivîse...",
     "error": "Efû bikin, xetayek çêbû. Ji kerema xwe dîsa biceribînin.",
     "welcome_cv": "Silav! Ez alîkarê te yê afirandina CV me. Ez îro çawa dikarim alîkariya te bikim? Kerema xwe re behsa ezmûnên xwe ji min re bikin, heta ku ew ne profesyonel bin jî.",
-    "welcome_lettre": "Silav! Ez alîkarê te yê afirandina nameya motîvasyonê me. Ez îro çawa dikarim alîkariya te bikim? Behsa ezmûnên xwe yên jiyanê bikin, û ez ê ji bo veguherandina wan ber bi şiyanên profesyonel ve alîkariya we bikim."
+    "welcome_lettre": "Silav! Ez alîkarê te yê afirandina nameya motîvasyonê me. Ez îro çawa dikarim alîkariya te bikim? Behsa ezmûnên xwe yên jiyanê bikin, û ez ê ji bo veguherandina wan ber bi şiyanên profesyonel ve alîkariya we bikim.",
+    "context_default": "Default Context",
+    "send": "Send"
   },
   "home": "Destpêk",
   "cv": "CV",

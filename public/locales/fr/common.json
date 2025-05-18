@@ -7,7 +7,10 @@
   },
   "languages": {
     "fr": "Français",
-    "en": "Anglais"
+    "en": "Anglais",
+    "fa": "Dari",
+    "ku": "Kurde",
+    "zh": "Chinois"
   },
   "cv": {
     "title": "Création de CV",
@@ -56,7 +59,11 @@
     "loading": "L'assistant rédige une réponse...",
     "error": "Désolé, une erreur est survenue. Veuillez réessayer.",
     "welcome_cv": "Bonjour ! Je suis votre assistant pour la création de CV. Comment puis-je vous aider aujourd'hui ? N'hésitez pas à me parler de vos expériences, même si elles ne sont pas professionnelles.",
-    "welcome_lettre": "Bonjour ! Je suis votre assistant pour la création de lettre de motivation. Comment puis-je vous aider aujourd'hui ? Parlez-moi de vos expériences de vie, et je vous aiderai à les transformer en compétences professionnelles."
+    "welcome_lettre": "Bonjour ! Je suis votre assistant pour la création de lettre de motivation. Comment puis-je vous aider aujourd'hui ? Parlez-moi de vos expériences de vie, et je vous aiderai à les transformer en compétences professionnelles.",
+    "context_default": "Je suis en train de rédiger un document professionnel",
+    "send": "Envoyer",
+    "copy_success": "Texte copié dans le presse-papiers !",
+    "copy_label": "Exemple prêt à copier"
   },
   "home": "Accueil",
   "cv": "CV",

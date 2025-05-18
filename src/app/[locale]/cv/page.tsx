@@ -54,15 +54,15 @@ export default function CVPage({ params }: { params: { locale: string } }) {
   }
 
   return (
-    <Container maxW="container.xl" py={5}>
-      <Heading color="redCross.500" mb={5}>{t('cv.title')}</Heading>
+    <Container maxW="100%" px={4} py={4}>
+      <Heading color="redCross.500" mb={4} size="lg">{t('cv.title')}</Heading>
       
-      <Grid templateColumns="2fr 1fr" gap={4} h="calc(100vh - 200px)">
-        <GridItem>
-          <VStack spacing={4} align="stretch" h="100%">
-            <HStack justify="space-between">
-              <Alert status="info" borderRadius="lg">
-                <AlertIcon />
+      <Grid templateColumns={["1fr", "1fr", "1fr 1fr"]} gap={4} h="calc(100vh - 150px)">
+        <GridItem h="100%">
+          <VStack spacing={2} align="stretch" h="100%">
+            <HStack justify="space-between" mb={1}>
+              <Alert status="info" borderRadius="lg" size="sm" py={1} fontSize="sm">
+                <AlertIcon boxSize="18px" />
                 <AlertDescription>
                   {t('cv.info_text')}
                 </AlertDescription>
@@ -112,21 +112,21 @@ export default function CVPage({ params }: { params: { locale: string } }) {
           </VStack>
         </GridItem>
 
-        <GridItem>
-          <Box 
-            borderWidth="1px" 
-            borderRadius="lg" 
-            h="100%" 
-            boxShadow="md" 
+        <GridItem h="100%">
+          <Box
+            h="100%"
             bg="white"
+            borderWidth="1px" 
+            borderRadius="lg"
             overflow="hidden"
             display="flex"
             flexDirection="column"
+            boxShadow="md"
           >
-            <Text p={4} fontWeight="bold" borderBottomWidth="1px">
+            <Text p={3} fontWeight="bold" borderBottomWidth="1px" bg="blue.50">
               {t('cv.assistant_title')}
             </Text>
-            <Box flexGrow={1}>
+            <Box flexGrow={1} overflow="hidden">
               <ChatWidget 
                 initialPrompt={MISTRAL_PROMPT} 
                 noDrawer={true}

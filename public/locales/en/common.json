@@ -1,0 +1,76 @@
+{
+  "header": {
+    "home": "Home",
+    "cv": "Resume",
+    "lettre": "Cover Letter",
+    "contact": "Contact"
+  },
+  "languages": {
+    "fr": "French",
+    "en": "English"
+  },
+  "cv": {
+    "title": "Resume Creation",
+    "document_loaded": "The resume template is ready to be edited",
+    "open_doc": "Open in Google Docs",
+    "info_text": "Edit your resume directly in Google Docs. To download it as a PDF, use the \"File\" > \"Download\" > \"PDF (.pdf)\" option in Google Docs.",
+    "loading": "Loading document...",
+    "assistant_title": "Resume Assistant - Ask your questions"
+  },
+  "lettre": {
+    "title": "Cover Letter",
+    "subtitle": "Create a personalized cover letter with the help of our assistant",
+    "form": {
+      "poste": "Position sought",
+      "poste_placeholder": "E.g: Full Stack Developer",
+      "entreprise": "Company",
+      "entreprise_placeholder": "Company name",
+      "secteur": "Industry",
+      "secteur_placeholder": "E.g: Technology, Healthcare, Finance...",
+      "ton": "Letter tone",
+      "ton_professionnel": "Professional",
+      "ton_dynamique": "Dynamic",
+      "ton_formel": "Formal",
+      "ton_creatif": "Creative",
+      "fiche_poste": "Job description (optional)",
+      "fiche_poste_label": "Paste the job description here",
+      "fiche_poste_placeholder": "Copy-paste the job description here to customize your letter according to the required skills...",
+      "fiche_poste_help": "We'll analyze this description to adapt your letter to the job requirements.",
+      "experience": "Your relevant experience",
+      "experience_placeholder": "Describe your relevant experience for this position...",
+      "experience_help": "Use the assistant on the right to transform your life experiences into professional skills.",
+      "competences": "Your key skills",
+      "competences_placeholder": "List your most relevant skills...",
+      "motivation": "Your motivation",
+      "motivation_placeholder": "Explain why you're interested in this position...",
+      "submit": "Generate my letter"
+    },
+    "assistant_title": "Cover Letter Assistant",
+    "success": "Letter successfully generated",
+    "success_message": "Your cover letter has been created with AI assistance",
+    "error": "Error",
+    "error_message": "An error occurred while generating the letter"
+  },
+  "chat": {
+    "placeholder": "Ask your question...",
+    "loading": "The assistant is writing a response...",
+    "error": "Sorry, an error occurred. Please try again.",
+    "welcome_cv": "Hello! I'm your resume creation assistant. How can I help you today? Feel free to tell me about your experiences, even if they're not professional.",
+    "welcome_lettre": "Hello! I'm your cover letter creation assistant. How can I help you today? Tell me about your life experiences, and I'll help you transform them into professional skills."
+  },
+  "home": "Home",
+  "cv": "Resume",
+  "letter": "Cover Letter",
+  "language": "Language",
+  "french": "French",
+  "english": "English",
+  "welcome": "Welcome to Alberthon, your professional assistant",
+  "create_cv": "Create a Resume",
+  "create_letter": "Create a Cover Letter",
+  "assistant": "Assistant",
+  "skills": "Skills",
+  "experiences": "Experiences",
+  "education": "Education",
+  "submit": "Submit",
+  "select_language": "Select language"
+} 

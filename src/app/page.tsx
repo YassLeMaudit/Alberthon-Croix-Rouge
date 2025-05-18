@@ -1,10 +1,24 @@
 'use client'
 
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { Box, Container, Heading, SimpleGrid, Text, VStack, Button, useColorModeValue } from '@chakra-ui/react'
 import { FaFileAlt, FaEnvelope, FaUserTie } from 'react-icons/fa'
 import Link from 'next/link'
 
-export default function Home() {
+export default function RootPage() {
+  const router = useRouter()
+  
+  useEffect(() => {
+    // Redirection vers la langue par défaut (fr)
+    router.replace('/fr')
+  }, [router])
+  
+  // Page vide pour la redirection
+  return null
+}
+
+export function Home() {
   const bgColor = useColorModeValue('white', 'gray.800')
   const cardBg = useColorModeValue('white', 'gray.700')
 

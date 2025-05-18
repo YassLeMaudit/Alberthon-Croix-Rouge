@@ -16,4 +16,5 @@ export interface LettreFormData {
   motivation: string
   competences: string
   ton: 'professionnel' | 'dynamique' | 'formel' | 'créatif'
+  fichePoste: string
 } 

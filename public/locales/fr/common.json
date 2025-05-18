@@ -1,0 +1,76 @@
+{
+  "header": {
+    "home": "Accueil",
+    "cv": "CV",
+    "lettre": "Lettre de Motivation",
+    "contact": "Contact"
+  },
+  "languages": {
+    "fr": "Français",
+    "en": "Anglais"
+  },
+  "cv": {
+    "title": "Création de CV",
+    "document_loaded": "Le template CV est prêt à être modifié",
+    "open_doc": "Ouvrir dans Google Docs",
+    "info_text": "Modifiez votre CV directement dans Google Docs. Pour le télécharger en PDF, utilisez l'option \"Fichier\" > \"Télécharger\" > \"PDF (.pdf)\" dans Google Docs.",
+    "loading": "Chargement du document...",
+    "assistant_title": "Assistant CV - Posez vos questions"
+  },
+  "lettre": {
+    "title": "Lettre de Motivation",
+    "subtitle": "Créez une lettre de motivation personnalisée avec l'aide de notre assistant",
+    "form": {
+      "poste": "Poste recherché",
+      "poste_placeholder": "Ex: Développeur Full Stack",
+      "entreprise": "Entreprise",
+      "entreprise_placeholder": "Nom de l'entreprise",
+      "secteur": "Secteur d'activité",
+      "secteur_placeholder": "Ex: Technologies, Santé, Finance...",
+      "ton": "Ton de la lettre",
+      "ton_professionnel": "Professionnel",
+      "ton_dynamique": "Dynamique",
+      "ton_formel": "Formel",
+      "ton_creatif": "Créatif",
+      "fiche_poste": "Fiche de poste (facultatif)",
+      "fiche_poste_label": "Collez la fiche de poste ici",
+      "fiche_poste_placeholder": "Copiez-collez la description du poste ici pour personnaliser votre lettre selon les compétences recherchées...",
+      "fiche_poste_help": "Nous analyserons cette fiche pour adapter votre lettre aux exigences du poste.",
+      "experience": "Votre expérience pertinente",
+      "experience_placeholder": "Décrivez votre expérience pertinente pour ce poste...",
+      "experience_help": "Utilisez l'assistant à droite pour transformer vos expériences de vie en compétences professionnelles.",
+      "competences": "Vos compétences clés",
+      "competences_placeholder": "Listez vos compétences les plus pertinentes...",
+      "motivation": "Votre motivation",
+      "motivation_placeholder": "Expliquez pourquoi ce poste vous intéresse...",
+      "submit": "Générer ma lettre"
+    },
+    "assistant_title": "Assistant Lettre de Motivation",
+    "success": "Lettre générée avec succès",
+    "success_message": "Votre lettre de motivation a été créée avec l'aide de l'IA",
+    "error": "Erreur",
+    "error_message": "Une erreur est survenue lors de la génération de la lettre"
+  },
+  "chat": {
+    "placeholder": "Posez votre question...",
+    "loading": "L'assistant rédige une réponse...",
+    "error": "Désolé, une erreur est survenue. Veuillez réessayer.",
+    "welcome_cv": "Bonjour ! Je suis votre assistant pour la création de CV. Comment puis-je vous aider aujourd'hui ? N'hésitez pas à me parler de vos expériences, même si elles ne sont pas professionnelles.",
+    "welcome_lettre": "Bonjour ! Je suis votre assistant pour la création de lettre de motivation. Comment puis-je vous aider aujourd'hui ? Parlez-moi de vos expériences de vie, et je vous aiderai à les transformer en compétences professionnelles."
+  },
+  "home": "Accueil",
+  "cv": "CV",
+  "letter": "Lettre de motivation",
+  "language": "Langue",
+  "french": "Français",
+  "english": "Anglais",
+  "welcome": "Bienvenue sur Alberthon, votre assistant professionnel",
+  "create_cv": "Créer un CV",
+  "create_letter": "Créer une lettre de motivation",
+  "assistant": "Assistant",
+  "skills": "Compétences",
+  "experiences": "Expériences",
+  "education": "Formation",
+  "submit": "Soumettre",
+  "select_language": "Sélectionner la langue"
+} 

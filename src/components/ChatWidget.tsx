@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
   Box,
   Button,
@@ -19,11 +19,35 @@ import {
 } from '@chakra-ui/react'
 import { FaComments, FaPaperPlane, FaTimes } from 'react-icons/fa'
 
-export default function ChatWidget() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+interface ChatWidgetProps {
+  initialPrompt?: string;
+  noDrawer?: boolean;
+  drawerState?: {
+    isOpen: boolean;
+    onOpen: () => void;
+    onClose: () => void;
+  };
+}
+
+export default function ChatWidget({ initialPrompt, noDrawer = false, drawerState }: ChatWidgetProps) {
+  const defaultDrawerState = useDisclosure()
+  const { isOpen, onOpen, onClose } = drawerState || defaultDrawerState
+  
   const [message, setMessage] = useState('')
   const [chatHistory, setChatHistory] = useState<Array<{ role: 'user' | 'assistant', content: string }>>([])
   const [isLoading, setIsLoading] = useState(false)
+  const [systemPrompt, setSystemPrompt] = useState<string | undefined>(initialPrompt)
+
+  // Afficher un message d'accueil de l'assistant au chargement
+  useEffect(() => {
+    if (initialPrompt) {
+      // Message initial de l'assistant pour aider l'utilisateur
+      setChatHistory([{ 
+        role: 'assistant', 
+        content: "Bonjour ! Je suis votre assistant pour la création de CV. Comment puis-je vous aider aujourd'hui ? N'hésitez pas à me parler de vos expériences, même si elles ne sont pas professionnelles."
+      }]);
+    }
+  }, [initialPrompt]);
 
   const handleSend = async () => {
     if (!message.trim()) return
@@ -41,7 +65,8 @@ export default function ChatWidget() {
         },
         body: JSON.stringify({
           message: userMessage,
-          context: 'Je suis en train de rédiger une lettre de motivation.',
+          context: systemPrompt || 'Je suis en train de rédiger une lettre de motivation.',
+          history: chatHistory,
         }),
       })
 
@@ -60,6 +85,60 @@ export default function ChatWidget() {
     }
   }
 
+  // Contenu du chat à réutiliser dans le drawer et directement dans la page
+  const chatContent = (
+    <VStack h="100%" spacing={4}>
+      <Box
+        flex="1"
+        w="full"
+        overflowY="auto"
+        p={4}
+        borderRadius="md"
+        bg="gray.50"
+      >
+        {chatHistory.map((msg, index) => (
+          <Box
+            key={index}
+            mb={4}
+            p={3}
+            borderRadius="lg"
+            bg={msg.role === 'user' ? 'blue.100' : 'white'}
+            alignSelf={msg.role === 'user' ? 'flex-end' : 'flex-start'}
+          >
+            <Text>{msg.content}</Text>
+          </Box>
+        ))}
+        {isLoading && (
+          <Box p={3} borderRadius="lg" bg="gray.100">
+            <Text>L'assistant rédige une réponse...</Text>
+          </Box>
+        )}
+      </Box>
+
+      <HStack w="full" p={4} borderTopWidth="1px">
+        <Input
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder="Posez votre question..."
+          onKeyPress={(e) => e.key === 'Enter' && handleSend()}
+        />
+        <IconButton
+          aria-label="Envoyer"
+          icon={<FaPaperPlane />}
+          onClick={handleSend}
+          colorScheme="blue"
+          isLoading={isLoading}
+        />
+      </HStack>
+    </VStack>
+  );
+
+  // Si noDrawer est true, renvoyer uniquement le contenu du chat sans le drawer
+  if (noDrawer) {
+    return chatContent;
+  }
+
+  // Sinon, renvoyer le bouton flottant et le drawer
   return (
     <>
       <IconButton
@@ -79,54 +158,11 @@ export default function ChatWidget() {
         <DrawerContent>
           <DrawerCloseButton />
           <DrawerHeader borderBottomWidth="1px">
-            Assistant IA
+            Assistant CV
           </DrawerHeader>
 
           <DrawerBody>
-            <VStack h="full" spacing={4}>
-              <Box
-                flex="1"
-                w="full"
-                overflowY="auto"
-                p={4}
-                borderRadius="md"
-                bg="gray.50"
-              >
-                {chatHistory.map((msg, index) => (
-                  <Box
-                    key={index}
-                    mb={4}
-                    p={3}
-                    borderRadius="lg"
-                    bg={msg.role === 'user' ? 'blue.100' : 'white'}
-                    alignSelf={msg.role === 'user' ? 'flex-end' : 'flex-start'}
-                  >
-                    <Text>{msg.content}</Text>
-                  </Box>
-                ))}
-                {isLoading && (
-                  <Box p={3} borderRadius="lg" bg="gray.100">
-                    <Text>L'assistant rédige une réponse...</Text>
-                  </Box>
-                )}
-              </Box>
-
-              <HStack w="full" p={4} borderTopWidth="1px">
-                <Input
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Posez votre question..."
-                  onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                />
-                <IconButton
-                  aria-label="Envoyer"
-                  icon={<FaPaperPlane />}
-                  onClick={handleSend}
-                  colorScheme="blue"
-                  isLoading={isLoading}
-                />
-              </HStack>
-            </VStack>
+            {chatContent}
           </DrawerBody>
         </DrawerContent>
       </Drawer>

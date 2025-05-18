@@ -54,7 +54,9 @@ export class MistralClient {
   async generateLettre(formData: any): Promise<string> {
     try {
       console.log('Envoi de la requête à Mistral API pour la lettre')
-      const prompt = `En tant qu'expert en rédaction de lettres de motivation, génère une lettre de motivation professionnelle et persuasive pour ${formData.nom} ${formData.prenom} avec les informations suivantes:
+      
+      // Construction du prompt de base
+      let prompt = `En tant qu'expert en rédaction de lettres de motivation, génère une lettre de motivation professionnelle et persuasive avec les informations suivantes:
 
 Poste: ${formData.poste}
 Entreprise: ${formData.entreprise}
@@ -64,8 +66,24 @@ Ton souhaité: ${formData.ton}
 Expérience pertinente: ${formData.experience}
 Compétences clés: ${formData.competences}
 Motivation: ${formData.motivation}
+`
 
-Instructions spécifiques:
+      // Ajout des informations de la fiche de poste si disponible
+      if (formData.fichePoste && formData.fichePoste.trim()) {
+        prompt += `
+Fiche de poste: ${formData.fichePoste}
+
+Instructions supplémentaires:
+- Analyse attentivement la fiche de poste ci-dessus
+- Identifie les mots-clés et compétences recherchées dans la fiche de poste
+- Adapte la lettre pour mettre en évidence les compétences de l'utilisateur qui correspondent aux exigences du poste
+- Utilise une terminologie similaire à celle de la fiche de poste
+`
+      }
+
+      // Finalisation du prompt avec les instructions générales
+      prompt += `
+Instructions générales:
 - Structure la lettre en 3 parties: introduction, développement et conclusion
 - Adapte le ton selon le choix de l'utilisateur (${formData.ton})
 - Mettre en valeur les compétences et l'expérience les plus pertinentes pour le poste
@@ -74,7 +92,6 @@ Instructions spécifiques:
 - Format professionnel avec mise en page claire et paragraphes bien structurés
 
 Format de sortie:
-[En-tête avec coordonnées]
 [Date]
 [Nom et adresse de l'entreprise]
 

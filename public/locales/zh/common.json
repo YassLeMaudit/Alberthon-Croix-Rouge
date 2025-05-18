@@ -1,0 +1,79 @@
+{
+  "header": {
+    "home": "首页",
+    "cv": "简历",
+    "lettre": "求职信",
+    "contact": "联系我们"
+  },
+  "languages": {
+    "fr": "法语",
+    "en": "英语",
+    "fa": "达里语",
+    "ku": "库尔德语",
+    "zh": "中文"
+  },
+  "cv": {
+    "title": "简历创建",
+    "document_loaded": "简历模板已准备好可以编辑",
+    "open_doc": "在Google文档中打开",
+    "info_text": "直接在Google文档中编辑您的简历。要下载为PDF格式，请访问文件菜单，选择下载，然后选择PDF格式。",
+    "loading": "正在加载文档...",
+    "assistant_title": "简历助手 - 提出您的问题"
+  },
+  "lettre": {
+    "title": "求职信",
+    "subtitle": "在我们助手的帮助下创建个性化求职信",
+    "form": {
+      "poste": "职位",
+      "poste_placeholder": "例如：全栈开发工程师",
+      "entreprise": "公司",
+      "entreprise_placeholder": "公司名称",
+      "secteur": "行业",
+      "secteur_placeholder": "例如：技术、医疗、金融...",
+      "ton": "语气",
+      "ton_professionnel": "专业",
+      "ton_dynamique": "活力",
+      "ton_formel": "正式",
+      "ton_creatif": "创意",
+      "fiche_poste": "职位描述（可选）",
+      "fiche_poste_label": "在此粘贴职位描述",
+      "fiche_poste_placeholder": "在此复制粘贴职位描述，以便根据所需技能定制您的信件...",
+      "fiche_poste_help": "我们将分析此描述以使您的信件适应职位要求。",
+      "experience": "相关经验",
+      "experience_placeholder": "描述您与此职位相关的经验...",
+      "experience_help": "使用右侧的助手将您的生活经验转化为专业技能。",
+      "competences": "核心技能",
+      "competences_placeholder": "列出您最相关的技能...",
+      "motivation": "求职动机",
+      "motivation_placeholder": "解释为什么您对此职位感兴趣...",
+      "submit": "生成求职信"
+    },
+    "assistant_title": "求职信助手",
+    "success": "信件成功生成",
+    "success_message": "您的求职信已通过AI辅助创建",
+    "error": "错误",
+    "error_message": "生成信件时出现错误"
+  },
+  "chat": {
+    "placeholder": "提出您的问题...",
+    "loading": "助手正在撰写回复...",
+    "error": "抱歉，出现错误。请重试。",
+    "welcome_cv": "您好！我是您的简历创建助手。今天我能如何帮助您？请随时告诉我您的经历，即使它们不是职业性质的。",
+    "welcome_lettre": "您好！我是您的求职信创建助手。今天我能如何帮助您？告诉我您的生活经历，我会帮助您将它们转化为专业技能。"
+  },
+  "home": "首页",
+  "cv": "简历",
+  "letter": "求职信",
+  "language": "语言",
+  "french": "法语",
+  "english": "英语",
+  "welcome": "欢迎使用Alberthon，您的专业助手",
+  "create_cv": "创建简历",
+  "create_letter": "创建求职信",
+  "assistant": "助手",
+  "skills": "技能",
+  "experiences": "经验",
+  "education": "教育",
+  "submit": "提交",
+  "select_language": "选择语言"
+} 

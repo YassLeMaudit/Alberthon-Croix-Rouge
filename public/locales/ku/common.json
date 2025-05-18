@@ -1,0 +1,79 @@
+{
+  "header": {
+    "home": "Destpêk",
+    "cv": "CV",
+    "lettre": "Nameya Motîvasyon",
+    "contact": "Têkilî"
+  },
+  "languages": {
+    "fr": "Fransî",
+    "en": "Îngilîzî",
+    "fa": "Derî",
+    "ku": "Kurdî",
+    "zh": "Çînî"
+  },
+  "cv": {
+    "title": "Afirandina CV",
+    "document_loaded": "Şablona CV amade ye ku were guhertin",
+    "open_doc": "Di Google Docs de veke",
+    "info_text": "CV-ya xwe rasterast di Google Docs de biguherînin. Ji bo dakêşandina wê bi formata PDF, vebijarka \"Dosya\" > \"Dakêşîn\" > \"PDF (.pdf)\" di Google Docs de bikar bînin.",
+    "loading": "Dokument tê barkirin...",
+    "assistant_title": "Alîkarê CV - Pirsa xwe bipirsin"
+  },
+  "lettre": {
+    "title": "Nameya Motîvasyon",
+    "subtitle": "Bi alîkariya alîkarê me nameyek motîvasyonê ya kesane biafirînin",
+    "form": {
+      "poste": "Pozisyon",
+      "poste_placeholder": "Mînak: Pêşdebirê Full Stack",
+      "entreprise": "Şirket",
+      "entreprise_placeholder": "Navê şirketê",
+      "secteur": "Qada karî",
+      "secteur_placeholder": "Mînak: Teknolojî, Tenduristî, Aborî...",
+      "ton": "Awayê nameyê",
+      "ton_professionnel": "Profesyonel",
+      "ton_dynamique": "Dînamîk",
+      "ton_formel": "Resmî",
+      "ton_creatif": "Afirandî",
+      "fiche_poste": "Danasîna kar (bijarte)",
+      "fiche_poste_label": "Danasîna kar li vir dalîne",
+      "fiche_poste_placeholder": "Danasîna kar li vir kopî bike da ku nameya we li gorî şiyanên hewce were taybetî kirin...",
+      "fiche_poste_help": "Em ê vê danasînê analîz bikin da ku nameya we li gorî hewceyên kar adapte bikin.",
+      "experience": "Ezmûnên we yên têkildar",
+      "experience_placeholder": "Ezmûnên xwe yên têkildar ji bo vê pozisyonê binivîsin...",
+      "experience_help": "Ji bo veguherîna ezmûnên xwe yên jiyanê bo şiyanên profesyonel, alîkarê li aliyê rastê bikar bînin.",
+      "competences": "Şiyanên sereke yên we",
+      "competences_placeholder": "Şiyanên xwe yên herî girîng rêz bikin...",
+      "motivation": "Motîvasyona we",
+      "motivation_placeholder": "Ravekin ka çima hûn ji vê pozisyonê re eleqedar in...",
+      "submit": "Nameya min biafirîne"
+    },
+    "assistant_title": "Alîkarê Nameya Motîvasyon",
+    "success": "Name bi serkeftî hate afirandin",
+    "success_message": "Nameya we ya motîvasyonê bi alîkariya AI hatiye afirandin",
+    "error": "Xeta",
+    "error_message": "Di dema afirandina nameyê de xetayek çêbû"
+  },
+  "chat": {
+    "placeholder": "Pirsa xwe bipirsin...",
+    "loading": "Alîkar bersivê dinivîse...",
+    "error": "Efû bikin, xetayek çêbû. Ji kerema xwe dîsa biceribînin.",
+    "welcome_cv": "Silav! Ez alîkarê te yê afirandina CV me. Ez îro çawa dikarim alîkariya te bikim? Kerema xwe re behsa ezmûnên xwe ji min re bikin, heta ku ew ne profesyonel bin jî.",
+    "welcome_lettre": "Silav! Ez alîkarê te yê afirandina nameya motîvasyonê me. Ez îro çawa dikarim alîkariya te bikim? Behsa ezmûnên xwe yên jiyanê bikin, û ez ê ji bo veguherandina wan ber bi şiyanên profesyonel ve alîkariya we bikim."
+  },
+  "home": "Destpêk",
+  "cv": "CV",
+  "letter": "Nameya Motîvasyon",
+  "language": "Ziman",
+  "french": "Fransî",
+  "english": "Îngilîzî",
+  "welcome": "Bi xêr hatî Alberthon, alîkarê te yê profesyonel",
+  "create_cv": "CV biafirîne",
+  "create_letter": "Nameya Motîvasyon biafirîne",
+  "assistant": "Alîkar",
+  "skills": "Şiyan",
+  "experiences": "Ezmûn",
+  "education": "Perwerde",
+  "submit": "Bişîne",
+  "select_language": "Ziman hilbijêre"
+} 

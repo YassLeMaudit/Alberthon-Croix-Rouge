@@ -3,8 +3,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Providers } from './providers'
-import { useEffect } from 'react'
-import { usePathname } from 'next/navigation'
+
 
 // Initialiser i18n
 import i18n from 'i18next'

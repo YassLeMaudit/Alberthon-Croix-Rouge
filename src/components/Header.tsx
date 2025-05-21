@@ -20,6 +20,7 @@ export default function Header() {
     { key: 'home', label: t('header.home'), href: `/${currentLang}` },
     { key: 'cv', label: t('header.cv'), href: `/${currentLang}/cv` },
     { key: 'lettre', label: t('header.lettre'), href: `/${currentLang}/lettre` },
+    { key: 'coaching', label: t('header.coaching'), href: `/${currentLang}/coaching` },
   ]
 
   // Déterminer si le lien est actif

@@ -4,8 +4,10 @@ import { Box, Container, Heading, Text, VStack, useColorModeValue, SimpleGrid, C
 import { FaLightbulb, FaTasks, FaComments, FaRocket, FaUserShield, FaAward } from 'react-icons/fa';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function CoachingPage() {
+  const { t } = useTranslation();
   const bgColor = useColorModeValue('gray.50', 'gray.800');
   const cardBg = useColorModeValue('white', 'gray.700');
   const textColor = useColorModeValue('gray.600', 'gray.300');
@@ -16,39 +18,39 @@ export default function CoachingPage() {
   const coachingSections = [
     {
       icon: FaLightbulb,
-      title: "Définition de Stratégie",
-      description: "Nous vous aidons à clarifier vos objectifs de carrière et à élaborer une stratégie de recherche d'emploi efficace.",
-      advice: "Définition de Stratégie: Commencez par lister vos compétences et vos objectifs de carrière à court et long terme."
+      title: t('coaching.sections.strategy.title'),
+      description: t('coaching.sections.strategy.description'),
+      advice: t('coaching.sections.strategy.advice')
     },
     {
       icon: FaTasks,
-      title: "Préparation aux Entretiens",
-      description: "Entraînez-vous avec des simulations d'entretiens et recevez des feedbacks constructifs pour exceller.",
-      advice: "Préparation aux Entretiens: Entraînez-vous à répondre aux questions courantes et préparez des questions pertinentes à poser à l'intervieweur."
+      title: t('coaching.sections.interviews.title'),
+      description: t('coaching.sections.interviews.description'),
+      advice: t('coaching.sections.interviews.advice')
     },
     {
       icon: FaComments,
-      title: "Optimisation de Profil",
-      description: "Améliorez votre CV, lettre de motivation et profil LinkedIn pour maximiser votre impact.",
-      advice: "Optimisation de Profil: Assurez-vous que votre CV est concis, met en valeur vos réalisations et est adapté à chaque offre d'emploi."
+      title: t('coaching.sections.profile.title'),
+      description: t('coaching.sections.profile.description'),
+      advice: t('coaching.sections.profile.advice')
     },
     {
       icon: FaRocket,
-      title: "Développement de Compétences",
-      description: "Identifiez les compétences clés recherchées et élaborez un plan pour les acquérir ou les renforcer.",
-      advice: "Développement de Compétences: Identifiez une compétence clé pour votre domaine et cherchez des cours en ligne ou des ateliers pour la développer."
+      title: t('coaching.sections.skills.title'),
+      description: t('coaching.sections.skills.description'),
+      advice: t('coaching.sections.skills.advice')
     },
     {
       icon: FaUserShield,
-      title: "Confiance en Soi",
-      description: "Surmontez les blocages et développez une mentalité positive pour aborder votre recherche d'emploi avec assurance.",
-      advice: "Confiance en Soi: Rappelez-vous de vos succès passés et concentrez-vous sur vos forces. Chaque 'non' vous rapproche d'un 'oui'."
+      title: t('coaching.sections.confidence.title'),
+      description: t('coaching.sections.confidence.description'),
+      advice: t('coaching.sections.confidence.advice')
     },
     {
       icon: FaAward,
-      title: "Négociation Salariale",
-      description: "Apprenez à négocier votre salaire et vos avantages pour obtenir la meilleure offre possible.",
-      advice: "Négociation Salariale: Faites des recherches sur les salaires moyens pour votre poste et votre expérience. Soyez prêt à justifier vos attentes."
+      title: t('coaching.sections.negotiation.title'),
+      description: t('coaching.sections.negotiation.description'),
+      advice: t('coaching.sections.negotiation.advice')
     }
   ];
 
@@ -63,13 +65,13 @@ export default function CoachingPage() {
         <VStack spacing={12}>
           <VStack spacing={4} textAlign="center">
             <Heading as="h1" size="2xl" color={headingColor}>
-              Coaching Carrière Personnalisé
+              {t('coaching.title')}
             </Heading>
             <Text fontSize="xl" color={textColor}>
-              Votre partenaire pour une recherche d'emploi réussie et épanouissante.
+              {t('coaching.subtitle')}
             </Text>
             <Text fontSize="md" color={textColor} maxW="2xl">
-              Le coaching carrière vous offre un accompagnement sur-mesure pour naviguer avec succès dans le marché de l'emploi. Que vous soyez en début de carrière, en reconversion, ou à la recherche de nouvelles opportunités, nos coachs experts sont là pour vous guider.
+              {t('coaching.description')}
             </Text>
           </VStack>
 
@@ -94,7 +96,7 @@ export default function CoachingPage() {
                     variant="outline"
                     px={6}
                   >
-                    Commencer
+                    {t('coaching.button.start')}
                   </Button>
                 </CardFooter>
               </Card>
@@ -103,35 +105,33 @@ export default function CoachingPage() {
 
           <VStack spacing={4} textAlign="center" pt={10}>
             <Heading as="h2" size="xl" color={headingColor}>
-              Prêt à passer à l'action ?
+              {t('coaching.cta.title')}
             </Heading>
             <Text fontSize="lg" color={textColor}>
-              Contactez-nous pour une première consultation gratuite et découvrez comment nous pouvons vous aider.
+              {t('coaching.cta.description')}
             </Text>
             <Button as={Link} href="mailto:mkabbaj@albertschool.com" size="lg" colorScheme="redCross">
-              Prendre Rendez-vous
+              {t('coaching.cta.button')}
             </Button>
           </VStack>
-
         </VStack>
       </Container>
 
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
         <ModalContent bg={cardBg}>
-          <ModalHeader color={headingColor}>Conseil</ModalHeader>
+          <ModalHeader color={headingColor}>{t('coaching.modal.title')}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text color={textColor}>{selectedAdvice}</Text>
           </ModalBody>
           <ModalFooter>
             <Button colorScheme="redCross" onClick={onClose}>
-              Fermer
+              {t('coaching.modal.close')}
             </Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
-
     </Box>
   );
 } 

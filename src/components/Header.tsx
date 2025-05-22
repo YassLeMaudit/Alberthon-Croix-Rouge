@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 import NextLink from 'next/link'
 import LanguageSwitcher from './LanguageSwitcher'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
 
 export default function Header() {
   const { t, i18n } = useTranslation('common')
@@ -43,6 +44,7 @@ export default function Header() {
     >
       <Flex h={16} alignItems="center" justifyContent="space-between">
         <HStack spacing={8} alignItems="center">
+          <Image src="/images/logo.png" alt="Alberthon" width={75} height={75} />
           <Box fontWeight="bold" fontSize="xl">Alberthon</Box>
           <HStack as="nav" spacing={6} display={{ base: 'none', md: 'flex' }}>
             {navItems.map((item) => (

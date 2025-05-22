@@ -5,6 +5,10 @@ import { initReactI18next } from 'react-i18next'
 const resources = {
   fr: {
     common: {
+      "header.home": "Accueil",
+      "header.cv": "CV",
+      "header.lettre": "Lettre",
+      "header.coaching": "Coaching",
       'welcome': 'Votre assistant personnel pour la recherche d\'emploi',
       'cv.title': 'Création de CV',
       'lettre.title': 'Lettre de Motivation',
@@ -39,11 +43,15 @@ const resources = {
       'coaching.sections.confidence.advice': 'Confiance en Soi: Rappelez-vous de vos succès passés et concentrez-vous sur vos forces. Chaque \'non\' vous rapproche d\'un \'oui\'.',
       'coaching.sections.negotiation.title': 'Négociation Salariale',
       'coaching.sections.negotiation.description': 'Apprenez à négocier votre salaire et vos avantages pour obtenir la meilleure offre possible.',
-      'coaching.sections.negotiation.advice': 'Négociation Salariale: Faites des recherches sur les salaires moyens pour votre poste et votre expérience. Soyez prêt à justifier vos attentes.'
+      'coaching.sections.negotiation.advice': 'Négociation Salariale: Faites des recherches sur les salaires moyens pour votre poste et votre expérience. Soyez prêt à justifier vos attentes.'  
     }
   },
   en: {
     common: {
+      'header.home': 'Home',
+      'header.cv': 'CV',
+      'header.lettre': 'Cover Letter',
+      'header.coaching': 'Career Coaching',
       'welcome': 'Your personal job search assistant',
       'cv.title': 'CV Creation',
       'lettre.title': 'Cover Letter',
@@ -77,10 +85,14 @@ const resources = {
       'coaching.sections.negotiation.title': 'Salary Negotiation',
       'coaching.sections.negotiation.description': 'Learn to negotiate your salary and benefits to get the best possible offer.',
       'coaching.sections.negotiation.advice': 'Salary Negotiation: Research average salaries for your position and experience. Be prepared to justify your expectations.'
-    }
+    } 
   },
   fa: {
     common: {
+      "header.home": "صفحه اصلی",
+      "header.cv": "رزومه",
+      "header.lettre": "نامه معرفی",
+      "header.coaching": "مربیگری شغلی",
       'welcome': 'دستیار شخصی جستجوی شغل شما',
       'cv.title': 'ایجاد رزومه',
       'lettre.title': 'نامه معرفی',
@@ -118,6 +130,10 @@ const resources = {
   },
   ku: {
     common: {
+      "header.home": "پەڕەوان",
+      "header.cv": "رزومه",
+      "header.lettre": "نامه معرفی",
+      "header.coaching": "مربیگری شغلی",
       'welcome': 'Alîkarê kesane ya lêgerîna karê te',
       'cv.title': 'Afirandina CV',
       'lettre.title': 'Nameya Pêşkêşkirinê',
@@ -155,6 +171,10 @@ const resources = {
   },
   zh: {
     common: {
+      "header.home": "首页",
+      "header.cv": "简历",
+      "header.lettre": "求职信",
+      "header.coaching": "职业指导",
       'welcome': '您的个人求职助手',
       'cv.title': '简历创建',
       'lettre.title': '求职信',

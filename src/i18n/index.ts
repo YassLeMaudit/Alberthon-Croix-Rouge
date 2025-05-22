@@ -5,6 +5,10 @@ import { initReactI18next } from 'react-i18next'
 const resources = {
   fr: {
     common: {
+      "features.essential": "Essentiel",
+      "features.professional": "Professionnel",
+      "features.aiPowered": "Boosté par l'IA",
+      "features.learnMore": "En savoir plus",
       "header.home": "Accueil",
       "header.cv": "CV",
       "header.lettre": "Lettre",
@@ -48,6 +52,10 @@ const resources = {
   },
   en: {
     common: {
+      "features.essential": "Essential",
+      "features.professional": "Professional",
+      "features.aiPowered": "AI Powered",
+      "features.learnMore": "Learn More",
       'header.home': 'Home',
       'header.cv': 'CV',
       'header.lettre': 'Cover Letter',
@@ -89,6 +97,10 @@ const resources = {
   },
   fa: {
     common: {
+      "features.essential": "اصلی",
+      "features.professional": "مهندسی",
+      "features.aiPowered": "با یادگیری ماشینی",
+      "features.learnMore": "بیشتر بدانید",
       "header.home": "صفحه اصلی",
       "header.cv": "رزومه",
       "header.lettre": "نامه معرفی",
@@ -130,6 +142,10 @@ const resources = {
   },
   ku: {
     common: {
+      "features.essential": "ئەسەنتیل",
+      "features.professional": "پرۆفەسیەل",
+      "features.aiPowered": "بە یادگیرییە ماشینی",
+      "features.learnMore": "زیاتر بدانەوە",
       "header.home": "پەڕەوان",
       "header.cv": "رزومه",
       "header.lettre": "نامه معرفی",
@@ -171,6 +187,10 @@ const resources = {
   },
   zh: {
     common: {
+      "features.essential": "基础",
+      "features.professional": "专业",
+      "features.aiPowered": "AI 驱动",
+      "features.learnMore": "了解更多",
       "header.home": "首页",
       "header.cv": "简历",
       "header.lettre": "求职信",

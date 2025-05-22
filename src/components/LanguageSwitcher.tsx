@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import { useTranslation } from 'react-i18next'
 import { Box, Select, useColorModeValue } from '@chakra-ui/react'
 import { usePathname } from 'next/navigation'
+import { ConsoleMessage } from 'puppeteer'
 
 export default function LanguageSwitcher() {
   const router = useRouter()
@@ -51,11 +52,12 @@ export default function LanguageSwitcher() {
         w="auto"
         icon={<></>}
       >
-        <option value="fr">{t('languages.fr')}</option>
-        <option value="en">{t('languages.en')}</option>
-        <option value="fa">{t('languages.fa')}</option>
-        <option value="ku">{t('languages.ku')}</option>
-        <option value="zh">{t('languages.zh')}</option>
+        <option value="fr">{'🌐 FR'}</option>
+        <option value="en">{'🌐 EN'}</option>
+        <option value="es">{'🌐 ES'}</option>
+        <option value="fa">{'🌐 FA'}</option>
+        <option value="ku">{'🌐 KU'}</option>
+        <option value="zh">{'🌐 ZH'}</option>
       </Select>
     </Box>
   )

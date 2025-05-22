@@ -47,7 +47,56 @@ const resources = {
       'coaching.sections.confidence.advice': 'Confiance en Soi: Rappelez-vous de vos succès passés et concentrez-vous sur vos forces. Chaque \'non\' vous rapproche d\'un \'oui\'.',
       'coaching.sections.negotiation.title': 'Négociation Salariale',
       'coaching.sections.negotiation.description': 'Apprenez à négocier votre salaire et vos avantages pour obtenir la meilleure offre possible.',
-      'coaching.sections.negotiation.advice': 'Négociation Salariale: Faites des recherches sur les salaires moyens pour votre poste et votre expérience. Soyez prêt à justifier vos attentes.'  
+      'coaching.sections.negotiation.advice': 'Négociation Salariale: Faites des recherches sur les salaires moyens pour votre poste et votre expérience. Soyez prêt à justifier vos attentes.',
+      "lettre": {
+        "title": "Lettre de Motivation",
+        "subtitle": "Créez une lettre de motivation personnalisée avec l'aide de notre assistant",
+        "form": {
+          "poste": "Poste recherché",
+          "poste_placeholder": "Ex: Développeur Full Stack",
+          "entreprise": "Entreprise",
+          "entreprise_placeholder": "Nom de l'entreprise",
+          "secteur": "Secteur d'activité",
+          "secteur_placeholder": "Ex: Technologies, Santé, Finance...",
+          "ton": "Ton de la lettre",
+          "ton_professionnel": "Professionnel",
+          "ton_dynamique": "Dynamique",
+          "ton_formel": "Formel",
+          "ton_creatif": "Créatif",
+          "fiche_poste": "Fiche de poste (facultatif)",
+          "fiche_poste_label": "Collez la fiche de poste ici",
+          "fiche_poste_placeholder": "Copiez-collez la description du poste ici pour personnaliser votre lettre selon les compétences recherchées...",
+          "fiche_poste_help": "Nous analyserons cette fiche pour adapter votre lettre aux exigences du poste.",
+          "experience": "Votre expérience pertinente",
+          "experience_placeholder": "Décrivez votre expérience pertinente pour ce poste...",
+          "experience_help": "Utilisez l'assistant à droite pour transformer vos expériences de vie en compétences professionnelles.",
+          "competences": "Vos compétences clés",
+          "competences_placeholder": "Listez vos compétences les plus pertinentes...",
+          "motivation": "Votre motivation",
+          "motivation_placeholder": "Expliquez pourquoi ce poste vous intéresse...",
+          "submit": "Générer ma lettre",
+          "assistant_title": "Assistant Lettre de Motivation"
+        }
+      },
+      "cv": {
+        "title": "Création de CV",
+        "document_loaded": "Le template CV est prêt à être modifié",
+        "open_doc": "Ouvrir dans Google Docs",
+        "info_text": "Modifiez votre CV directement dans Google Docs. Pour le télécharger en PDF, utilisez l'option \"Fichier\" > \"Télécharger\" > \"PDF (.pdf)\" dans Google Docs.",
+        "loading": "Chargement du document...",
+        "assistant_title": "Assistant CV - Posez vos questions"
+      },
+      "chat": {
+        "placeholder": "Posez votre question...",
+        "loading": "L'assistant rédige une réponse...",
+        "error": "Désolé, une erreur est survenue. Veuillez réessayer.",
+        "welcome_cv": "Bonjour ! Je suis votre assistant pour la création de CV. Comment puis-je vous aider aujourd'hui ? N'hésitez pas à me parler de vos expériences, même si elles ne sont pas professionnelles.",
+        "welcome_lettre": "Bonjour ! Je suis votre assistant pour la création de lettre de motivation. Comment puis-je vous aider aujourd'hui ? Parlez-moi de vos expériences de vie, et je vous aiderai à les transformer en compétences professionnelles.",
+        "context_default": "Je suis en train de rédiger un document professionnel",
+        "send": "Envoyer",
+        "copy_success": "Texte copié dans le presse-papiers !",
+        "copy_label": "Exemple prêt à copier"
+      }
     }
   },
   en: {
@@ -92,7 +141,56 @@ const resources = {
       'coaching.sections.confidence.advice': 'Self-Confidence: Remember your past successes and focus on your strengths. Every \'no\' brings you closer to a \'yes\'.',
       'coaching.sections.negotiation.title': 'Salary Negotiation',
       'coaching.sections.negotiation.description': 'Learn to negotiate your salary and benefits to get the best possible offer.',
-      'coaching.sections.negotiation.advice': 'Salary Negotiation: Research average salaries for your position and experience. Be prepared to justify your expectations.'
+      'coaching.sections.negotiation.advice': 'Salary Negotiation: Research average salaries for your position and experience. Be prepared to justify your expectations.',
+      "lettre": {
+        "title": "Cover Letter",
+        "subtitle": "Create a personalized cover letter with our assistant's help",
+        "form": {
+          "poste": "Position sought",
+          "poste_placeholder": "Ex: Full Stack Developer",
+          "entreprise": "Company",
+          "entreprise_placeholder": "Company name",
+          "secteur": "Industry",
+          "secteur_placeholder": "Ex: Technology, Healthcare, Finance...",
+          "ton": "Letter tone",
+          "ton_professionnel": "Professional",
+          "ton_dynamique": "Dynamic",
+          "ton_formel": "Formal",
+          "ton_creatif": "Creative",
+          "fiche_poste": "Job description (optional)",
+          "fiche_poste_label": "Paste the job description here",
+          "fiche_poste_placeholder": "Copy and paste the job description here to customize your letter according to the required skills...",
+          "fiche_poste_help": "We will analyze this description to adapt your letter to the job requirements.",
+          "experience": "Your relevant experience",
+          "experience_placeholder": "Describe your relevant experience for this position...",
+          "experience_help": "Use the assistant on the right to transform your life experiences into professional skills.",
+          "competences": "Your key skills",
+          "competences_placeholder": "List your most relevant skills...",
+          "motivation": "Your motivation",
+          "motivation_placeholder": "Explain why you're interested in this position...",
+          "submit": "Generate my letter",
+          "assistant_title": "Cover Letter Assistant"
+        }
+      },
+      "cv": {
+        "title": "CV Creation",
+        "document_loaded": "The CV template is ready to be edited",
+        "open_doc": "Open in Google Docs",
+        "info_text": "Edit your CV directly in Google Docs. To download it as PDF, use the \"File\" > \"Download\" > \"PDF (.pdf)\" option in Google Docs.",
+        "loading": "Loading document...",
+        "assistant_title": "CV Assistant - Ask your questions"
+      },
+      "chat": {
+        "placeholder": "Ask your question...",
+        "loading": "The assistant is writing a response...",
+        "error": "Sorry, an error occurred. Please try again.",
+        "welcome_cv": "Hello! I'm your CV creation assistant. How can I help you today? Feel free to tell me about your experiences, even if they're not professional.",
+        "welcome_lettre": "Hello! I'm your cover letter creation assistant. How can I help you today? Tell me about your life experiences, and I'll help you transform them into professional skills.",
+        "context_default": "I am writing a professional document",
+        "send": "Send",
+        "copy_success": "Text copied to clipboard!",
+        "copy_label": "Ready to copy example"
+      }
     } 
   },
   fa: {
@@ -137,7 +235,56 @@ const resources = {
       'coaching.sections.confidence.advice': 'اعتماد به نفس: موفقیت‌های گذشته خود را به یاد آورید و روی نقاط قوت خود تمرکز کنید. هر "نه" شما را به یک "بله" نزدیک‌تر می‌کند.',
       'coaching.sections.negotiation.title': 'مذاکره حقوق',
       'coaching.sections.negotiation.description': 'یاد بگیرید چگونه برای حقوق و مزایای خود مذاکره کنید تا بهترین پیشنهاد ممکن را دریافت کنید.',
-      'coaching.sections.negotiation.advice': 'مذاکره حقوق: در مورد میانگین حقوق برای موقعیت و تجربه خود تحقیق کنید. آماده باشید تا انتظارات خود را توجیه کنید.'
+      'coaching.sections.negotiation.advice': 'مذاکره حقوق: در مورد میانگین حقوق برای موقعیت و تجربه خود تحقیق کنید. آماده باشید تا انتظارات خود را توجیه کنید.',
+      "lettre": {
+        "title": "نامه معرفی",
+        "subtitle": "با کمک دستیار ما یک نامه معرفی شخصی ایجاد کنید",
+        "form": {
+          "poste": "موقعیت مورد نظر",
+          "poste_placeholder": "مثال: توسعه‌دهنده فول استک",
+          "entreprise": "شرکت",
+          "entreprise_placeholder": "نام شرکت",
+          "secteur": "صنعت",
+          "secteur_placeholder": "مثال: فناوری، سلامت، مالی...",
+          "ton": "لحن نامه",
+          "ton_professionnel": "حرفه‌ای",
+          "ton_dynamique": "پویا",
+          "ton_formel": "رسمی",
+          "ton_creatif": "خلاقانه",
+          "fiche_poste": "شرح شغل (اختیاری)",
+          "fiche_poste_label": "شرح شغل را اینجا بچسبانید",
+          "fiche_poste_placeholder": "شرح شغل را کپی و در اینجا بچسبانید تا نامه شما بر اساس مهارت‌های مورد نیاز شخصی‌سازی شود...",
+          "fiche_poste_help": "ما این شرح را تحلیل می‌کنیم تا نامه شما را با نیازهای شغل تطبیق دهیم.",
+          "experience": "تجربه مرتبط شما",
+          "experience_placeholder": "تجربه مرتبط خود را برای این موقعیت شرح دهید...",
+          "experience_help": "از دستیار سمت راست برای تبدیل تجربیات زندگی خود به مهارت‌های حرفه‌ای استفاده کنید.",
+          "competences": "مهارت‌های کلیدی شما",
+          "competences_placeholder": "مهارت‌های مرتبط خود را فهرست کنید...",
+          "motivation": "انگیزه شما",
+          "motivation_placeholder": "توضیح دهید چرا به این موقعیت علاقه‌مند هستید...",
+          "submit": "ایجاد نامه من",
+          "assistant_title": "دستیار نامه معرفی"
+        }
+      },
+      "cv": {
+        "title": "ایجاد رزومه",
+        "document_loaded": "قالب رزومه آماده ویرایش است",
+        "open_doc": "باز کردن در Google Docs",
+        "info_text": "رزومه خود را مستقیماً در Google Docs ویرایش کنید. برای دانلود به صورت PDF، از گزینه \"فایل\" > \"دانلود\" > \"PDF (.pdf)\" در Google Docs استفاده کنید.",
+        "loading": "در حال بارگذاری سند...",
+        "assistant_title": "دستیار رزومه - سؤالات خود را بپرسید"
+      },
+      "chat": {
+        "placeholder": "سؤال خود را بپرسید...",
+        "loading": "دستیار در حال نوشتن پاسخ است...",
+        "error": "متأسفانه خطایی رخ داد. لطفاً دوباره تلاش کنید.",
+        "welcome_cv": "سلام! من دستیار شما برای ایجاد رزومه هستم. امروز چطور می‌توانم به شما کمک کنم؟ لطفاً درباره تجربیات خود با من صحبت کنید، حتی اگر حرفه‌ای نباشند.",
+        "welcome_lettre": "سلام! من دستیار شما برای نوشتن نامه معرفی هستم. امروز چطور می‌توانم به شما کمک کنم؟ درباره تجربیات زندگی خود با من صحبت کنید، و من به شما کمک می‌کنم آنها را به مهارت‌های حرفه‌ای تبدیل کنید.",
+        "context_default": "من در حال نوشتن یک سند حرفه‌ای هستم",
+        "send": "ارسال",
+        "copy_success": "متن در کلیپ‌بورد کپی شد!",
+        "copy_label": "نمونه آماده کپی"
+      }
     }
   },
   ku: {
@@ -182,7 +329,56 @@ const resources = {
       'coaching.sections.confidence.advice': 'Baweriya bi Xwe: Serkeftinên xwe yên berê bi bîr bînin û li ser xalên xwe yên xurt bisekinin. Her \'na\' we nêzî \'erê\'yekê dike.',
       'coaching.sections.negotiation.title': 'Danûstandina Meaşê',
       'coaching.sections.negotiation.description': 'Hîn bibin ku hûn çawa ji bo meaş û mafên xwe danûstandinê bikin da ku hûn pêşniyara herî baş bistînin.',
-      'coaching.sections.negotiation.advice': 'Danûstandina Meaşê: Li ser meaşên navîn ên ji bo pozisyon û tecrûbeya xwe lêkolîn bikin. Amade bin ku hûn çaverêniyên xwe biparêzin.'
+      'coaching.sections.negotiation.advice': 'Danûstandina Meaşê: Li ser meaşên navîn ên ji bo pozisyon û tecrûbeya xwe lêkolîn bikin. Amade bin ku hûn çaverêniyên xwe biparêzin.',
+      "lettre": {
+        "title": "Nameya Pêşkêşkirinê",
+        "subtitle": "Bi alîkariya berdevkê me nameya pêşkêşkirinê ya kesane biafirînin",
+        "form": {
+          "poste": "Pozîsyona xwestî",
+          "poste_placeholder": "Mînak: Pêşdebirê Full Stack",
+          "entreprise": "Şirket",
+          "entreprise_placeholder": "Navê şirketê",
+          "secteur": "Sektor",
+          "secteur_placeholder": "Mînak: Teknolojî, Tenduristî, Fînans...",
+          "ton": "Tona nameyê",
+          "ton_professionnel": "Profesyonel",
+          "ton_dynamique": "Dînamîk",
+          "ton_formel": "Fermî",
+          "ton_creatif": "Afirandêr",
+          "fiche_poste": "Danasîna kar (bijarte)",
+          "fiche_poste_label": "Danasîna kar li vir binivîse",
+          "fiche_poste_placeholder": "Danasîna kar li vir kopî bike da ku nameya te li gorî şiyanên pêwist were guncandin...",
+          "fiche_poste_help": "Em ê vê danasînê analîz bikin da ku nameya te li gorî pêdiviyên kar adapte bikin.",
+          "experience": "Tecrûbeya te ya têkildar",
+          "experience_placeholder": "Tecrûbeya xwe ya têkildar ji bo vê pozîsyonê binivîse...",
+          "experience_help": "Ji bo veguherandina tecrûbeyên jiyanê bo şiyanên profesyonel berdevkê li rastê bikar bîne.",
+          "competences": "Şiyanên te yên sereke",
+          "competences_placeholder": "Şiyanên xwe yên herî têkildar rêz bike...",
+          "motivation": "Motîvasyona te",
+          "motivation_placeholder": "Şirove bike ka çima ev pozîsyon te eleqedar dike...",
+          "submit": "Nameya min biafirîne",
+          "assistant_title": "Dîstûrê Nameya Pêşkêşkirinê"
+        }
+      },
+      "cv": {
+        "title": "Afirandina CV",
+        "document_loaded": "Şablona CV amade ye ji bo sererastkirinê",
+        "open_doc": "Di Google Docs de veke",
+        "info_text": "CV'ya xwe rasterast di Google Docs de biguherîne. Ji bo daxistina wek PDF, vebijarka \"Pel\" > \"Daxistin\" > \"PDF (.pdf)\" di Google Docs de bikar bîne.",
+        "loading": "Belgeyê tê barkirin...",
+        "assistant_title": "Alîkarê CV - Pirsên xwe bipirse"
+      },
+      "chat": {
+        "placeholder": "Pirsa xwe bipirse...",
+        "loading": "Alîkar bersivê dinivîse...",
+        "error": "Bibore, çewtiyek çêbû. Ji kerema xwe dîsa biceribîne.",
+        "welcome_cv": "Silav! Ez alîkarê te me ji bo afirandina CV'yê. Ez îro çawa dikarim alîkariya te bikim? Tu dikarî behsa ezmûnên xwe bikî, çi profesyonel bin an na.",
+        "welcome_lettre": "Silav! Ez alîkarê te me ji bo nivîsandina nameya pêşkêşkirinê. Ez îro çawa dikarim alîkariya te bikim? Behsa ezmûnên jiyana xwe bike, û ez ê alîkariya te bikim ku wan bikî şiyanên profesyonel.",
+        "context_default": "Ez belgeyeke profesyonel dinivîsim",
+        "send": "Bişîne",
+        "copy_success": "Nivîs hat kopîkirin!",
+        "copy_label": "Mînak amade ye ji bo kopîkirinê"
+      }
     }
   },
   zh: {
@@ -227,7 +423,150 @@ const resources = {
       'coaching.sections.confidence.advice': '自信建设：记住您过去的成功，专注于您的优势。每个"不"都让您更接近一个"是"。',
       'coaching.sections.negotiation.title': '薪资谈判',
       'coaching.sections.negotiation.description': '学习如何谈判您的薪资和福利，以获得最佳可能的offer。',
-      'coaching.sections.negotiation.advice': '薪资谈判：研究您的职位和经验水平的平均薪资。准备好为您的期望进行论证。'
+      'coaching.sections.negotiation.advice': '薪资谈判：研究您的职位和经验水平的平均薪资。准备好为您的期望进行论证。',
+      "lettre": {
+        "title": "求职信",
+        "subtitle": "在我们助手的帮助下创建个性化求职信",
+        "form": {
+          "poste": "期望职位",
+          "poste_placeholder": "例如：全栈开发工程师",
+          "entreprise": "公司",
+          "entreprise_placeholder": "公司名称",
+          "secteur": "行业",
+          "secteur_placeholder": "例如：科技、医疗、金融...",
+          "ton": "信件语气",
+          "ton_professionnel": "专业",
+          "ton_dynamique": "活力",
+          "ton_formel": "正式",
+          "ton_creatif": "创意",
+          "fiche_poste": "职位描述（可选）",
+          "fiche_poste_label": "在此粘贴职位描述",
+          "fiche_poste_placeholder": "在此复制粘贴职位描述，以根据所需技能定制您的求职信...",
+          "fiche_poste_help": "我们将分析此描述以使您的求职信符合职位要求。",
+          "experience": "相关经验",
+          "experience_placeholder": "描述您与此职位相关的经验...",
+          "experience_help": "使用右侧助手将您的生活经验转化为专业技能。",
+          "competences": "核心技能",
+          "competences_placeholder": "列出您最相关的技能...",
+          "motivation": "求职动机",
+          "motivation_placeholder": "解释为什么您对这个职位感兴趣...",
+          "submit": "生成求职信",
+          "assistant_title": "求职信助手"
+        }
+      },
+      "cv": {
+        "title": "简历创建",
+        "document_loaded": "简历模板已准备好进行编辑",
+        "open_doc": "在 Google Docs 中打开",
+        "info_text": "直接在 Google Docs 中编辑您的简历。要下载为 PDF，请在 Google Docs 中使用\"文件\" > \"下载\" > \"PDF (.pdf)\"选项。",
+        "loading": "正在加载文档...",
+        "assistant_title": "简历助手 - 提出您的问题"
+      },
+      "chat": {
+        "placeholder": "请输入您的问题...",
+        "loading": "助手正在写回复...",
+        "error": "抱歉，发生错误。请重试。",
+        "welcome_cv": "您好！我是您的简历创建助手。今天我能如何帮助您？请随时告诉我您的经历，即使不是专业相关的也可以。",
+        "welcome_lettre": "您好！我是您的求职信创建助手。今天我能如何帮助您？请告诉我您的生活经历，我会帮您将其转化为专业技能。",
+        "context_default": "我正在撰写一份专业文档",
+        "send": "发送",
+        "copy_success": "文本已复制到剪贴板！",
+        "copy_label": "示例可供复制"
+      }
+    }
+  },
+  es: {
+    common: {
+      "features.essential": "Esencial",
+      "features.professional": "Profesional",
+      "features.aiPowered": "Impulsado por IA",
+      "features.learnMore": "Saber más",
+      "header.home": "Inicio",
+      "header.cv": "CV",
+      "header.lettre": "Carta de Presentación",
+      "header.coaching": "Coaching Profesional",
+      'welcome': 'Tu asistente personal para la búsqueda de empleo',
+      'cv.title': 'Creación de CV',
+      'lettre.title': 'Carta de Presentación',
+      'lettre.subtitle': 'Escribe una carta de presentación personalizada',
+      'assistant': 'Coaching Profesional',
+      'chat.welcome_cv': 'Obtén consejos profesionales personalizados',
+      'coaching.title': 'Coaching Profesional Personalizado',
+      'coaching.subtitle': 'Tu aliado para una búsqueda de empleo exitosa y satisfactoria.',
+      'coaching.description': 'El coaching profesional te ofrece apoyo personalizado para navegar con éxito en el mercado laboral. Ya sea que estés comenzando tu carrera, cambiando de rumbo o buscando nuevas oportunidades, nuestros coaches expertos están aquí para guiarte.',
+      'coaching.cta.title': '¿Listo para tomar acción?',
+      'coaching.cta.description': 'Contáctanos para una consulta inicial gratuita y descubre cómo podemos ayudarte.',
+      'coaching.cta.button': 'Agendar Cita',
+      'coaching.modal.title': 'Consejo',
+      'coaching.modal.close': 'Cerrar',
+      'coaching.button.start': 'Comenzar',
+      'coaching.sections.strategy.title': 'Definición de Estrategia',
+      'coaching.sections.strategy.description': 'Te ayudamos a clarificar tus objetivos profesionales y desarrollar una estrategia efectiva de búsqueda de empleo.',
+      'coaching.sections.strategy.advice': 'Definición de Estrategia: Comienza haciendo una lista de tus habilidades y objetivos profesionales a corto y largo plazo.',
+      'coaching.sections.interviews.title': 'Preparación para Entrevistas',
+      'coaching.sections.interviews.description': 'Practica con simulaciones de entrevistas y recibe retroalimentación constructiva para destacar.',
+      'coaching.sections.interviews.advice': 'Preparación para Entrevistas: Practica respondiendo preguntas comunes y prepara preguntas relevantes para hacer al entrevistador.',
+      'coaching.sections.profile.title': 'Optimización de Perfil',
+      'coaching.sections.profile.description': 'Mejora tu CV, carta de presentación y perfil de LinkedIn para maximizar tu impacto.',
+      'coaching.sections.profile.advice': 'Optimización de Perfil: Asegúrate de que tu CV sea conciso, destaque tus logros y esté adaptado a cada solicitud de empleo.',
+      'coaching.sections.skills.title': 'Desarrollo de Habilidades',
+      'coaching.sections.skills.description': 'Identifica las habilidades clave demandadas y desarrolla un plan para adquirirlas o fortalecerlas.',
+      'coaching.sections.skills.advice': 'Desarrollo de Habilidades: Identifica una habilidad clave para tu campo y busca cursos en línea o talleres para desarrollarla.',
+      'coaching.sections.confidence.title': 'Confianza Personal',
+      'coaching.sections.confidence.description': 'Supera los bloqueos y desarrolla una mentalidad positiva para abordar tu búsqueda de empleo con confianza.',
+      'coaching.sections.confidence.advice': 'Confianza Personal: Recuerda tus éxitos pasados y concéntrate en tus fortalezas. Cada "no" te acerca más a un "sí".',
+      'coaching.sections.negotiation.title': 'Negociación Salarial',
+      'coaching.sections.negotiation.description': 'Aprende a negociar tu salario y beneficios para obtener la mejor oferta posible.',
+      'coaching.sections.negotiation.advice': 'Negociación Salarial: Investiga los salarios promedio para tu puesto y experiencia. Prepárate para justificar tus expectativas.',
+      "lettre": {
+        "title": "Carta de Presentación",
+        "subtitle": "Crea una carta de presentación personalizada con la ayuda de nuestro asistente",
+        "form": {
+          "poste": "Puesto deseado",
+          "poste_placeholder": "Ej: Desarrollador Full Stack",
+          "entreprise": "Empresa",
+          "entreprise_placeholder": "Nombre de la empresa",
+          "secteur": "Sector",
+          "secteur_placeholder": "Ej: Tecnología, Salud, Finanzas...",
+          "ton": "Tono de la carta",
+          "ton_professionnel": "Profesional",
+          "ton_dynamique": "Dinámico",
+          "ton_formel": "Formal",
+          "ton_creatif": "Creativo",
+          "fiche_poste": "Descripción del puesto (opcional)",
+          "fiche_poste_label": "Pega aquí la descripción del puesto",
+          "fiche_poste_placeholder": "Copia y pega la descripción del puesto aquí para personalizar tu carta según las habilidades requeridas...",
+          "fiche_poste_help": "Analizaremos esta descripción para adaptar tu carta a los requisitos del puesto.",
+          "experience": "Tu experiencia relevante",
+          "experience_placeholder": "Describe tu experiencia relevante para este puesto...",
+          "experience_help": "Utiliza el asistente a la derecha para transformar tus experiencias de vida en habilidades profesionales.",
+          "competences": "Tus habilidades clave",
+          "competences_placeholder": "Enumera tus habilidades más relevantes...",
+          "motivation": "Tu motivación",
+          "motivation_placeholder": "Explica por qué te interesa este puesto...",
+          "submit": "Generar mi carta",
+          "assistant_title": "Asistente de Carta de Presentación"
+        }
+      },
+      "cv": {
+        "title": "Creación de CV",
+        "document_loaded": "La plantilla de CV está lista para editar",
+        "open_doc": "Abrir en Google Docs",
+        "info_text": "Edita tu CV directamente en Google Docs. Para descargarlo como PDF, usa la opción \"Archivo\" > \"Descargar\" > \"PDF (.pdf)\" en Google Docs.",
+        "loading": "Cargando documento...",
+        "assistant_title": "Asistente de CV - Haz tus preguntas"
+      },
+      "chat": {
+        "placeholder": "Haz tu pregunta...",
+        "loading": "El asistente está escribiendo una respuesta...",
+        "error": "Lo siento, ocurrió un error. Por favor, inténtalo de nuevo.",
+        "welcome_cv": "¡Hola! Soy tu asistente para la creación de CV. ¿Cómo puedo ayudarte hoy? No dudes en contarme sobre tus experiencias, aunque no sean profesionales.",
+        "welcome_lettre": "¡Hola! Soy tu asistente para la creación de cartas de presentación. ¿Cómo puedo ayudarte hoy? Cuéntame sobre tus experiencias de vida, y te ayudaré a transformarlas en habilidades profesionales.",
+        "context_default": "Estoy escribiendo un documento profesional",
+        "send": "Enviar",
+        "copy_success": "¡Texto copiado al portapapeles!",
+        "copy_label": "Ejemplo listo para copiar"
+      }
     }
   }
 }

@@ -4,7 +4,7 @@ import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 
 // Langues supportées
-const locales = ['fr', 'en', 'fa', 'ku', 'zh']
+const locales = ['fr', 'en','es', 'fa', 'ku', 'zh']
 const defaultLocale = 'fr'
 
 // Cette fonction obtient la langue préférée de l'utilisateur basée sur les headers

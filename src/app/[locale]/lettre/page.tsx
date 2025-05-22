@@ -242,7 +242,7 @@ export default function LettreMotivationPage({ params }: { params: { locale: str
             top="100px"
           >
             <Text p={4} fontWeight="bold" borderBottomWidth="1px">
-              {t('lettre.assistant_title')}
+              {t('lettre.form.assistant_title')}
             </Text>
             <Box flexGrow={1} minHeight="500px">
               <ChatWidget 

@@ -46,9 +46,9 @@
       "competences_placeholder": "Listez vos compétences les plus pertinentes...",
       "motivation": "Votre motivation",
       "motivation_placeholder": "Expliquez pourquoi ce poste vous intéresse...",
-      "submit": "Générer ma lettre"
+      "submit": "Générer ma lettre",
+      "assistant_title": "Assistant Lettre de Motivation"
     },
-    "assistant_title": "Assistant Lettre de Motivation",
     "success": "Lettre générée avec succès",
     "success_message": "Votre lettre de motivation a été créée avec l'aide de l'IA",
     "error": "Erreur",
@@ -80,4 +80,4 @@
   "education": "Formation",
   "submit": "Soumettre",
   "select_language": "Sélectionner la langue"
-} 
+}
